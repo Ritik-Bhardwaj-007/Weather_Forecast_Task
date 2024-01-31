@@ -53,8 +53,8 @@ Visit [ http://localhost:3000](http://localhost:3000) in your browser to explore
 
 ### Project Images
 
-![Alt text](images/First.jpg)
-![Alt text](images/Second.jpg)
-![Alt text](images/Third.jpg)
-![Alt text](images/Fourth.jpg)
+![Alt text](images/First.png)
+![Alt text](images/Second.png)
+![Alt text](images/Third.png)
+![Alt text](images/Fourth.png)
 
