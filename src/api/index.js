@@ -1,4 +1,4 @@
-const baseUrl = "http://api.weatherapi.com/v1/forecast.json?key=ef59b6751b3e4c2d8c8140702230411";
+const baseUrl = "https://api.weatherapi.com/v1/forecast.json?key=ef59b6751b3e4c2d8c8140702230411";
 
 export const getWeatherDataForCity = async (city) => {
   try {
@@ -9,8 +9,6 @@ export const getWeatherDataForCity = async (city) => {
     return await response.json();
   } catch (error) {
     console.error('Error fetching weather data for city:', error);
-    // You can handle the error in a way that makes sense for your application
-    // For example, you might return a default value, show an error message to the user, etc.
     return null;
   }
 };
