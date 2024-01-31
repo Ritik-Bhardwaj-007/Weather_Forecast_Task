@@ -17,7 +17,7 @@ function App() {
 
   useEffect(()=>{
     weather.fetchCurrentLocation();
-  },[])
+  })
   return (
     <div className="App">
       <div><h1 className='title'> Weather Forecast</h1>

@@ -9,7 +9,7 @@ function ForecastCard({dayRequired,isFahrenheit}) {
   return (
     <div className='forecastCard'>
       <p> Forecast Summary for {forecastTemp?.forecastday[dayRequired]?.date} </p>
-      <img src={currTemp?.condition?.icon}></img>
+      <img alt='Weather Icon' src={currTemp?.condition?.icon}></img>
       <p>Average Temperature : {isFahrenheit ? forecastTemp?.forecastday[dayRequired]?.day?.avgtemp_f : forecastTemp?.forecastday[dayRequired]?.day?.avgtemp_c}&deg; {tempType}</p>
       <p> Description : {currTemp?.condition.text}</p>
     </div>

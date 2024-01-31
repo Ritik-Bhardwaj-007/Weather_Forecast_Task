@@ -7,7 +7,7 @@ const Card= ({isFahrenheit})=>{
     const tempType=isFahrenheit? 'F':'C';
     return (
         <div className='card'>
-            <img src={currTemp?.condition?.icon}></img>
+            <img alt='Weather Icon' src={currTemp?.condition?.icon}></img>
             <h2>Description: {currTemp?.condition?.text}</h2>
             <h2> Now: {isFahrenheit ? currTemp?.temp_f : currTemp?.temp_c}&deg; {tempType}</h2>
             <h3>Minimum:{isFahrenheit ? forecastTemp?.forecastday[0]?.day.mintemp_f : forecastTemp?.forecastday[0]?.day.mintemp_c}&deg; {tempType},
