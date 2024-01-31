@@ -1,6 +1,6 @@
 import {createContext,useContext,useState} from 'react';
 import {getWeatherDataForCity} from '../api'
-import { getWeatherDataForLocaion } from '../api';
+import { getWeatherDataForLocation } from '../api';
 export const WeatherContext= createContext(null);
 
 export const useWeather=()=>{
@@ -9,15 +9,15 @@ export const useWeather=()=>{
 }
 
 export const WeatherProvider = (props)=>{
-    const [data,setData]=useState(null);
-    const [searchCity,setSearchCity]=useState(null);
+    const [data,setData]=useState('');
+    const [searchCity,setSearchCity]=useState('');
     const fetchData= async ()=>{
         const response= await getWeatherDataForCity(searchCity);
         setData(response);
     }
     const fetchCurrentLocation=()=>{
         navigator.geolocation.getCurrentPosition((position)=>{
-                getWeatherDataForLocaion(position.coords.latitude,position.coords.longitude).then((data)=> setData(data))
+                getWeatherDataForLocation(position.coords.latitude,position.coords.longitude).then((data)=> setData(data))
         })
     }
 

@@ -1,5 +1,10 @@
 body{
-  background-image: url('https://cdn2.vectorstock.com/i/1000x1000/07/81/seamless-weather-forecast-background-vector-2000781.jpg');
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.dribbble.com/users/498786/screenshots/10512253/media/e36d83faf1be80369e15732f1296ae93.png'); /* Replace 'your-image-url.jpg' with the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
 }
 .App {
   margin-top: 2%;
@@ -54,6 +59,7 @@ body{
   background-color: #c8ebf6;
 }
 .input-field{
+  text-align: center;
   border: 1px solid;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -71,4 +77,18 @@ body{
   color: bisque;
   background-color: rgb(60, 81, 99);
   cursor: pointer;
+}
+.forecastCardDiv {
+  display: flex;
+  flex-direction: row;
+  margin: auto; 
+  justify-content: center;
+  padding: 15px; 
+}
+.forecastCard{
+  padding: 20px;
+  margin: 2%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  background-color: #c8ebf6;
 }
