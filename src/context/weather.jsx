@@ -16,6 +16,7 @@ export const WeatherProvider = (props)=>{
         setData(response);
     }
     const fetchCurrentLocation=()=>{
+        setSearchCity('')
         navigator.geolocation.getCurrentPosition((position)=>{
                 getWeatherDataForLocation(position.coords.latitude,position.coords.longitude).then((data)=> setData(data))
         })

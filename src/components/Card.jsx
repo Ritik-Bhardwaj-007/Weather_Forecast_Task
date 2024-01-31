@@ -8,6 +8,9 @@ const Card = ({ isFahrenheit }) => {
   const tempType = isFahrenheit ? 'F' : 'C';
 
   return (
+    weather.data===null?<div className='card'>
+       <p className='h3'>Please Check the City again</p>
+    </div>:
     <div className='card'>
       <img alt='Weather Icon' src={currTemp?.condition?.icon}></img>
       <p className='h2'>Description: {currTemp?.condition?.text}</p>

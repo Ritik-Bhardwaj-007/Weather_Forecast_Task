@@ -32,13 +32,14 @@ function App() {
         weather.fetchCurrentLocation
       }/>
       </div>
+      {weather.data===null? null:
       <div className='forecastCardDiv'>
         
       {[...Array(3)].map((_, i) => {
           return <ForecastCard key={i} dayRequired={i} isFahrenheit={isFahrenheit} />;
         })}
 
-      </div>
+      </div>}
     </div>
   );
 }
