@@ -14,10 +14,11 @@ function App() {
   const handleToggle = (isChecked) => {
     setIsFahrenheit(isChecked);
   };
-
+ 
   useEffect(()=>{
     weather.fetchCurrentLocation();
-  })
+    // eslint-disable-next-line
+  },[])
   return (
     <div className="App">
       <div><h1 className='title'> Weather Forecast</h1>
